@@ -19,4 +19,14 @@ mylocalvar();
 // using y outside the function will generate an error
 echo "<p>Variable y outside function is: $y</p>";
 
+// Static keyword 
+function myStaticTest() {
+  static $x = 0;
+  echo $x;
+  $x++;
+}
+
+myStaticTest();
+myStaticTest();
+myStaticTest();
 ?>
