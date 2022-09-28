@@ -6,3 +6,15 @@ for ($x = 0; $x < 10; $x++) {
   echo "The number is: $x <br>";
 }
 ?>
+<?php
+$x = 0;
+
+while($x < 10) {
+  if ($x == 4) {
+    $x++;
+    continue;
+  }
+  echo "The number is: $x <br>";
+  $x++;
+}
+?>
